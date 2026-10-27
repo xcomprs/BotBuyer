@@ -750,7 +750,7 @@ class BotWorker:
 class BotManager:
     """Manages multi-processing execution and launching tasks based on CSV configuration."""
 
-    def __init__(self, csv_file_path="D:/coding/botBuyer/botBuyer/botBuyer/botBuyer.csv"):
+    def __init__(self, csv_file_path="./botBuyer.csv"):
         self.csv_file_path = csv_file_path
         self.notifier = NotificationService()
         self.csv_repo = CsvRepository(csv_file_path)
