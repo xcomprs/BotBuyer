@@ -74,7 +74,7 @@ class NotificationService:
 class CsvRepository:
     """Manages reading and writing state to the CSV database file."""
 
-    def __init__(self, csv_file_path="D:/coding/botBuyer/botBuyer/botBuyer/botBuyer.csv"):
+    def __init__(self, csv_file_path="./botBuyer.csv"):
         self.csv_file_path = csv_file_path
 
     def get_status_by_id(self, product_id):
